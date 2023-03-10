@@ -22,7 +22,10 @@ public class Playlist extends TraceableBaseEntity {
 
 
     @ManyToMany
-    @JoinTable(name = "playlist_music", joinColumns = @JoinColumn(name = "playlist_id", referencedColumnName = "id"), inverseJoinColumns = @JoinColumn(name = "music_id", referencedColumnName = "id"))
+    @JoinTable(name = "playlist_music", joinColumns =
+    @JoinColumn(name = "playlist_id", referencedColumnName = "id"),
+            inverseJoinColumns =
+            @JoinColumn(name = "music_id", referencedColumnName = "id"))
     private List<Music> musicList;
 
     private Boolean recommended = false;

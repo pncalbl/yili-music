@@ -13,7 +13,7 @@ import java.util.Optional;
 
 public abstract class BaseService {
 
-    private UserRepository userRepository;
+    protected UserRepository userRepository;
 
 
     protected User getCurrentUserEntity() {
